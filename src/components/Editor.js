@@ -4,6 +4,7 @@ import Showdown from "showdown"
 import "../style.css"
 import { useState } from "react"
 //NoTES SYNCED WITH LOCAL STOARAGE
+//Added notes summary title 
 export default function Editor({ currentNote, updateNote }) {
     const [selectedTab, setSelectedTab] = useState("write")
 
