@@ -3,7 +3,7 @@ import ReactMde from "react-mde"
 import Showdown from "showdown"
 import "../style.css"
 import { useState } from "react"
-
+//NoTES SYNCED WITH LOCAL STOARAGE
 export default function Editor({ currentNote, updateNote }) {
     const [selectedTab, setSelectedTab] = useState("write")
 
