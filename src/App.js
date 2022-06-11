@@ -23,7 +23,9 @@ export default function App() {
     const [currentNoteId, setCurrentNoteId] = React.useState(
         (notes[0] && notes[0].id) || ""
     )
-    
+    const deleteNode=(event,noteID)=>{
+       console.log(event,noteID)
+    }
     function createNewNote() {
         const newNote = {
             id: nanoid(),
@@ -62,6 +64,7 @@ export default function App() {
                     currentNote={findCurrentNote()}
                     setCurrentNoteId={setCurrentNoteId}
                     newNote={createNewNote}
+                    handleClick={deleteNode}
                 />
                 {
                     currentNoteId && 
