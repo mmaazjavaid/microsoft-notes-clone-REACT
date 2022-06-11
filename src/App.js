@@ -8,6 +8,7 @@ import {nanoid} from "nanoid"
 import "./index.css"
 
 export default function App() {
+    // project completed
     /**
      * Challenge:
      * 1. Every time the `notes` array changes, save it 
